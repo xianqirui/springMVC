@@ -1,0 +1,14 @@
+全局异常处理
+步揍：
+1.新建项目
+2.加入依赖
+3.新建一个自定义异常类
+4.在controller抛出异常
+5.创建一个普通类，作为全局异常处理类
+ 1）在类上加入@ControllerAdvice
+ 2)在类中定义方法，方法中加入@ExpectionHandler
+6.创建异常处理视图
+7.创建springmvc的配置文件
+    1）组件扫描器，扫描@Controller注解
+    2）组件扫描器，扫描@ControllerAdvice注解
+    3）声明注解驱动

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--控制全局行为-->
+    <!--<settings>
+        &lt;!&ndash;输出日志&ndash;&gt;
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>-->
+    <!--设置别名-->
+    <typeAliases>
+        <package name="com.xqr.domain"/>
+    </typeAliases>
+    <mappers>
+        <!-- 映射文件位置-->
+        <!--使用package要求：
+                1.mapper文件名和dao接口名必需完全一样,包括大小写
+                2.mapper文件和dao接口必须在同一目录
+         -->
+        <package name="com.xqr.dao"/><!--dao文件目录-->
+    </mappers>
+</configuration>
